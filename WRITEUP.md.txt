@@ -1,0 +1,1 @@
+I chose App Service because it's easier to manage, has built-in deployment and scaling, and doesn't require managing the OS. A VM offers more control but is heavier to maintain for a simple Flask app.
