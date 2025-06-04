@@ -14,7 +14,8 @@ class Config(object):
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmssql'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Password123'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
-    SQLALCHEMY_DATABASE_URI = f"mssql+pyodbc://{SQL_USER_NAME}:{SQL_PASSWORD}@{SQL_SERVER}:1433/{SQL_DATABASE}?driver=ODBC+Driver+17+for+SQL+Server"
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///localdb.db'
+    #f"mssql+pyodbc://{SQL_USER_NAME}:{SQL_PASSWORD}@{SQL_SERVER}:1433/{SQL_DATABASE}?driver=ODBC+Driver+17+for+SQL+Server"
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
